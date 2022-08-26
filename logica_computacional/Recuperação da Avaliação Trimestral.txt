@@ -1,0 +1,30 @@
+package rec;
+import javax.swing.JOptionPane;
+
+public class Rec {
+
+    public static void main(String[] args) {
+        String nome = "";
+        int idade = 0;
+        
+        String s = JOptionPane.showInputDialog("digite seu nome"!); // 
+        JOptionPane.showMessageDialog(null, "Bem vindo, " + s); //aqui tem que ser .showMessageDialog
+        Integer.parseInt(JOptionPane.showInputDialog(null, nome + " qual a sua idade?"));
+        if (idade < 18) {
+            JOptionPane.showMessageDialog(null, nome + " você é menor de idade ein! não vá aprontar!");//aqui tem que ser .showMessageDialog
+        } else {
+            JOptionPane.showMessageDialog(null, nome + " você é maior de idade, agora mesmo que não pode aprontar ein!");//aqui tem que ser .showMessageDialog
+        }
+        if(idade % 2 == 1){
+             JOptionPane.showMessageDialog(null, nome + " a sua idade é impar"); // aq é numero impar /aqui tem que ser .showMessageDialog
+        }
+         else {
+            JOptionPane.showMessageDialog(null, nome + " a sua idade é par"); // aq é numero par /aqui tem que ser .showMessageDialog
+        }
+        int i = -1;
+        if(i != idade){ // inves de while tem q ser if
+            i =  Integer.parseInt(JOptionPane.showInputDialog(null, nome + " quantos anos você disse que tem mesmo?"));
+        }
+        JOptionPane.showMessageDialog(null,"Muito bem!!");
+    }
+}
