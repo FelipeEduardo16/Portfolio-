@@ -1,0 +1,137 @@
+ package objeto;
+
+import javax.swing.JOptionPane;
+import java.util.ArrayList;
+
+public class Obijeto {
+
+    public static void main(String[] args) {
+        Object[] options = { "Aluno", "Professor" };
+        int a = JOptionPane.showOptionDialog(null, "Deseja Criar alunos ou professores? ","Informação", JOptionPane.DEFAULT_OPTION, JOptionPane.WARNING_MESSAGE, null, options, options[0]);
+        if(a==1){
+            cadastroProfessor();
+        }
+        else if(a==0){
+            cadastroAluno();
+        }else{
+            
+        }
+        
+        
+    }
+    public static void cadastroAluno(){
+        int qnt = Integer.parseInt(JOptionPane.showInputDialog("Quantos alunos deseja cadastrar? "));
+        ArrayList<Aluno> lista = new ArrayList<>();
+        for(int i = 0; i<qnt; i++){
+        String nome = JOptionPane.showInputDialog("Digite o nome a ser cadastrado ");
+        String cpf = JOptionPane.showInputDialog("Digite o cpf de "+nome);
+        String matricula = JOptionPane.showInputDialog("Digite a matricula de "+nome);
+        int idade =Integer.parseInt(JOptionPane.showInputDialog("Digite a idade de "+nome));
+        
+        Aluno p = new Aluno(matricula ,nome, cpf, idade);  
+        lista.add(p);
+        }
+        for(Aluno p:lista){
+            JOptionPane.showMessageDialog(null,"Nome: "+p.getNome()+"\n"+"CPF: "+p.getCpf()+"\n"+"Matricula: "+p.getMatricula()+"\n"+"Idade: "+p.getIdade());
+        }
+    }
+    public static void cadastroProfessor(){
+        int qnt = Integer.parseInt(JOptionPane.showInputDialog("Quantos professores deseja cadastrar? "));
+        ArrayList<Pessoa> lista = new ArrayList<>();
+        for(int i = 0; i<qnt; i++){
+          String nome = JOptionPane.showInputDialog("Digite o nome a ser cadastrado ");
+        String cpf = JOptionPane.showInputDialog("Digite o cpf de "+nome);
+        int idade =Integer.parseInt(JOptionPane.showInputDialog("Digite a idade de "+nome));
+        
+        Pessoa p = new Pessoa(nome, cpf, idade);  
+        lista.add(p);
+        }
+        for(Pessoa p:lista){
+            JOptionPane.showMessageDialog(null,"Nome: "+p.getNome()+"\n"+"CPF: "+p.getCpf()+"\n"+"Idade: "+p.getIdade());
+        }
+    }
+    
+}
+ package objeto;
+
+public class Pessoa {
+    String nome;
+    String cpf;
+    int idade;
+
+    public Pessoa(String nome, String cpf, int idade) {
+        this.nome = nome;
+        this.cpf = cpf;
+        this.idade = idade;
+    }
+
+    public String getNome() {
+        return nome;
+    }
+
+    public void setNome(String nome) {
+        this.nome = nome;
+    }
+
+    public String getCpf() {
+        return cpf;
+    }
+
+    public void setCpf(String cpf) {
+        this.cpf = cpf;
+    }
+
+    public int getIdade() {
+        return idade;
+    }
+
+    public void setIdade(int idade) {
+        this.idade = idade;
+    }
+    
+    
+}
+ package objeto;
+
+public class Aluno extends Pessoa{
+    String matricula;
+
+    public Aluno(String matricula, String nome, String cpf, int idade) {
+        super(nome, cpf, idade);
+        this.matricula = matricula;
+
+    }
+
+    public String getMatricula() {
+        return matricula;
+    }
+
+    public void setMatricula(String matricula) {
+        this.matricula = matricula;
+    }
+
+    public String getNome() {
+        return nome;
+    }
+
+    public void setNome(String nome) {
+        this.nome = nome;
+    }
+
+    public int getIdade() {
+        return idade;
+    }
+
+    public void setIdade(int idade) {
+        this.idade = idade;
+    }
+
+    public String getCpf() {
+        return cpf;
+    }
+
+    public void setCpf(String cpf) {
+        this.cpf = cpf;
+    }
+    
+}
