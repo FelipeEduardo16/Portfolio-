@@ -1,0 +1,77 @@
+Esse trabalho teve várias etapas de criação, começarei pela ideia e oque ele pode proporcionar como produto e ideia.
+
+ O nosso totem é uma forma de automatizar a recepção de empresas e prédios comerciais, substituindo o trabalho de funcionários para não termos atrasos ou falhas humanas, funcionando com um cadastro fácil e rápido e usamos a ferramenta de reconhecimento facial, além de contribuir como um sistema de segurança, aqui estão alguns pontos fortes do totem em relação a gestão humana atual:
+
+
+
+pode interagir ou acesso da segurança local ou responsável com o totem
+
+comodidade ao usuário
+
+total controle de quem entra nos edifícios, assim levantando estáticas como a quantidade de clientes ou residentes entraram naquele dia/temporada e liberar para as empresas
+
+facilidade de acesso e uso facilitando maiores fluxos de pessoas
+
+personalização da função de cada totem
+
+sem dependência de funcionários no local para informações e avisos do edifício
+
+posicionar estrategicamente os totens em lugares de segurança passiva  (está relacionado a como um portão é posicionado e estruturado para criar inconscientemente uma aura de segurança e controle.)
+Funcionamento
+
+Na perspectiva do Visitante, haverá um formulário onde a pessoa vai inserir seus dados pessoais, seguido de uma foto para futuro reconhecimento facial
+
+ Após isso, será perguntado qual sala ou qual proprietário/empresa deseja visitar,
+
+Então, o proprietário será notificado através de um aplicativo, avisando sobre o visitante identificado que deseja entrar na sua sala com foto e dados cadastrados. Em seguida, será exibida a opção de permitir ou negar o acesso,
+
+Caso o visitante  já tenha feito o cadastro anteriormente, todos os passos serão pulados e será solicitado o reconhecimento facial. Por fim, também será exibido a opção de permitir ou negar o acesso à sala.
+
+
+
+
+
+Por fim, para os proprietários(as) e funcionários(as) das salas comerciais e do próprio condomínio, o cadastro de acesso será feito diretamente pelo aplicativo.
+
+Funcionamento
+
+Na perspectiva do Visitante, haverá um formulário onde a pessoa vai inserir seus dados pessoais, seguido de uma foto para futuro reconhecimento facial
+
+ Após isso, será perguntado qual sala ou qual proprietário/empresa deseja visitar,
+
+Então, o proprietário será notificado através de um aplicativo, avisando sobre o visitante identificado que deseja entrar na sua sala com foto e dados cadastrados. Em seguida, será exibida a opção de permitir ou negar o acesso,
+
+Caso o visitante  já tenha feito o cadastro anteriormente, todos os passos serão pulados e será solicitado o reconhecimento facial. Por fim, também será exibido a opção de permitir ou negar o acesso à sala.
+
+
+
+
+
+Por fim, para os proprietários(as) e funcionários(as) das salas comerciais e do próprio condomínio, o cadastro de acesso será feito diretamente pelo aplicativo.
+
+linguagens e programas usados no projeto do totem
+
+
+
+Python e Django: Linguagem e Framework responsáveis pelo funcionamento do Totem.
+
+
+
+MySQL Workbench: Ferramenta responsável pela criação do Banco de Dados do Totem.
+
+
+
+JavaScript, HTML5 e CSS3: Linguagens front-ending responsáveis pelo design e funções das janelas do Totem.
+
+
+
+XAMPP: Software que possibilita as janelas do Totem ficarem no ar.
+
+
+
+AWS Recognition: Serviço da Amazon que possibilita a ação de reconhecimento facial.
+
+
+
+Serviço Twilio: Serviço que possibilita o envio de mensagens via-SMS.
+
